@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlTopContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722">
+
+    <TextView
+        android:id="@+id/tvTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top left"
+       android:textSize="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#8BC34A"/>
+    <TextView
+        android:id="@+id/tvBelow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Below"
+        android:textSize="24dp"
+        android:layout_below="@id/tvTopLeft"
+        android:background="#03A9F4"/>
+    <Button
+        android:id="@+id/btnTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Right"
+        android:background="#00BCD4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvBelowRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text below relative layout"
+        android:background="#FF9800"/>
+
+
+</LinearLayout>

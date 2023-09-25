@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/iv_animal"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/ic_elephant"
+        android:layout_marginTop="50dp"
+        tools:ignore="ContentDescription"
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <Button
+            android:id="@+id/bt_alpha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarStyle"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/txt_alpha"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_scale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            style="?android:attr/buttonBarStyle"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="@string/txt_scale"
+            android:textAllCaps="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/bt_trans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            style="?android:attr/buttonBarStyle"
+            android:width="0dp"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:text="@string/txt_trans" />
+
+        <Button
+            android:id="@+id/bt_rotate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarStyle"
+            android:width="0dp"
+            android:textAllCaps="true"
+            android:textSize="12dp"
+            android:text="@string/txt_rotate" />
+    </TableRow>
+</LinearLayout>

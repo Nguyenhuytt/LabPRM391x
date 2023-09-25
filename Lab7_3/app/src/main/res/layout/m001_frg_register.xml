@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40sp"
+            android:text="@string/txt_register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20dp"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rect"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_email"
+        android:padding="10dp"
+        android:hint="@string/hint_email"
+        android:drawablePadding="10dp"
+        android:autofillHints="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rect"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:hint="@string/hint_password"
+        android:autofillHints="password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/edt_re_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rect"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_key"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:hint="@string/hint_password"
+        android:autofillHints="password"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        android:layout_marginHorizontal="30sp"
+        android:text="@string/txt_register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
